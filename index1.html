@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cwiciecznie 1 Js</title>
+    <script>
+        function start1() {
+        document.getElementById('komunikat').innerHTML = "<h1>Cześć</h1>";
+        }
+        function przlacz() {
+            var h = document.getElementById('komunikat').hidden;
+            if(h) {
+                document.getElementById('komunikat').hidden = false;
+            } else {
+                document.getElementById('komunikat').hidden = true;
+            }
+            document.getElementById("komunikat").style.fontSize ="120px"
+        }
+        </script>
+        
+</head>
+<body>
+    <div id="komunikat"></div>
+    <button onclick="start1()">start</button>
+    <button onclick="przlacz()">przełacznik</button>
+</body>
+</html>
